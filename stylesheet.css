@@ -1,0 +1,166 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   font-family: Helvetica;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+
+.wrapper {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background: #000;
+}
+
+.left-block {
+   position: absolute;
+   width: 75%;
+   height: 100vh;
+   left: 0;
+}
+
+.left-block-container {
+   width: 100%;
+   height: 100vh;
+   background: url("hero.jpg") no-repeat center center;
+   background-size: cover;
+}
+
+.nav {
+   position: absolute;
+   width: 100%;
+   padding: 0.5em;
+}
+
+.nav > ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav > ul > li > a {
+   font-size: 1.5em;
+   text-transform: uppercase;
+   color: #ffe600;
+}
+
+.content {
+   position: absolute;
+   margin: 15em 4em;
+   opacity: 0;
+}
+
+h1 {
+   font-size: 5em;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #fff;
+   animation: blink 1.5s forwards infinite 4.5s;
+}
+
+@keyframes blink {
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.right-block {
+   position: absolute;
+   width: 25%;
+   height: 100vh;
+   right: 0;
+   background: #c0bebc;
+}
+
+.right-block-container {
+   display: flex;
+   justify-content: center;
+}
+
+.dots {
+   position: absolute;
+   top: 3em;
+   width: 80%;
+   height: 0.7em;
+   display: flex;
+   justify-content: space-between;
+}
+
+.dot {
+   width: 0.7em;
+   height: 0.7em;
+   background: #000;
+}
+
+.shape {
+   position: absolute;
+   top: 5em;
+   width: 47%;
+   height: 65%;
+   border: 0.1px solid #000;
+   border-top-left-radius: 10em;
+   border-top-right-radius: 10em;
+   display: flex;
+   justify-content: center;
+}
+
+.circle {
+   position: absolute;
+   top: 4.5em;
+   width: 4em;
+   height: 4em;
+   background: #000;
+   border-radius: 50%;
+}
+
+.bar {
+   position: absolute;
+   top: 12em;
+   width: 1px;
+   height: 60%;
+   background: #000;
+}
+
+.num {
+   position: absolute;
+   bottom: 0.7em;
+   font-size: 7.7em;
+   font-weight: 600;
+}
+
+.footer {
+   position: absolute;
+   bottom: 1em;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.light-mode {
+   background: transparent;
+   border: 1px solid #000;
+   margin-left: 0.5em;
+}
+
+.dl-mode {
+   display: flex;
+}
+
+.rights {
+   text-transform: uppercase;
+}
